@@ -1,17 +1,10 @@
 <p style="color: green"><%= notice %></p>
 
-<h1>Restaurants</h1>
-
-
-
-<div>
-    <iframe src="https://www.google.com" width="800" height="600"></iframe>
-</div>
+<h1>TOP Restaurants</h1>
 
 <div id="restaurants">
   <% @restaurants.each do |restaurant| %>
     <%= render restaurant %>
-    <%#= render 'restaurant', restaurant: restaurant %>
     <p>
       <%= link_to "Show this restaurant", restaurant %>
     </p>
@@ -19,5 +12,3 @@
 </div>
 
 <%= link_to "New restaurant", new_restaurant_path %>
-
-<%= link_to "top restaurants", top_restaurants_path %>
